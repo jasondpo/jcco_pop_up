@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <title>JCCO Popup Alert</title>
+</head>
+    <style>
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            box-sizing: border-box;
+            padding: 0 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .row{
+            max-width: 960px;
+        }
+    </style>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quasi amet reiciendis accusamus, commodi vitae quas corrupti adipisci saepe pariatur, dicta eum dolorum nostrum, aliquid quis aperiam soluta illo voluptates quam cumque quidem? Sapiente ipsum ipsa odio tempora explicabo, praesentium autem vitae animi voluptas nemo tenetur nobis dignissimos et inventore suscipit repudiandae adipisci quis consequatur facere aperiam. Voluptates ut vel inventore provident voluptatum perspiciatis animi laborum, pariatur dolore natus facere earum, temporibus adipisci cum quas reprehenderit. Fugit quos earum hic, laborum adipisci, similique culpa facilis cum atque totam ullam tempore iure repudiandae ipsum quas distinctio. Autem atque soluta distinctio nisi.
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quasi amet reiciendis accusamus, commodi vitae quas corrupti adipisci saepe pariatur, dicta eum dolorum nostrum, aliquid quis aperiam soluta illo voluptates quam cumque quidem? Sapiente ipsum ipsa odio tempora explicabo, praesentium autem vitae animi voluptas nemo tenetur nobis dignissimos et inventore suscipit repudiandae adipisci quis consequatur facere aperiam. Voluptates ut vel inventore provident voluptatum perspiciatis animi laborum, pariatur dolore natus facere earum, temporibus adipisci cum quas reprehenderit. Fugit quos earum hic, laborum adipisci, similique culpa facilis cum atque totam ullam tempore iure repudiandae ipsum quas distinctio. Autem atque soluta distinctio nisi.
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quasi amet reiciendis accusamus, commodi vitae quas corrupti adipisci saepe pariatur, dicta eum dolorum nostrum, aliquid quis aperiam soluta illo voluptates quam cumque quidem? Sapiente ipsum ipsa odio tempora explicabo, praesentium autem vitae animi voluptas nemo tenetur nobis dignissimos et inventore suscipit repudiandae adipisci quis consequatur facere aperiam. Voluptates ut vel inventore provident voluptatum perspiciatis animi laborum, pariatur dolore natus facere earum, temporibus adipisci cum quas reprehenderit. Fugit quos earum hic, laborum adipisci, similique culpa facilis cum atque totam ullam tempore iure repudiandae ipsum quas distinctio. Autem atque soluta distinctio nisi.
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quasi amet reiciendis accusamus, commodi vitae quas corrupti adipisci saepe pariatur, dicta eum dolorum nostrum, aliquid quis aperiam soluta illo voluptates quam cumque quidem? Sapiente ipsum ipsa odio tempora explicabo, praesentium autem vitae animi voluptas nemo tenetur nobis dignissimos et inventore suscipit repudiandae adipisci quis consequatur facere aperiam. Voluptates ut vel inventore provident voluptatum perspiciatis animi laborum, pariatur dolore natus facere earum, temporibus adipisci cum quas reprehenderit. Fugit quos earum hic, laborum adipisci, similique culpa facilis cum atque totam ullam tempore iure repudiandae ipsum quas distinctio. Autem atque soluta distinctio nisi.
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quasi amet reiciendis accusamus, commodi vitae quas corrupti adipisci saepe pariatur, dicta eum dolorum nostrum, aliquid quis aperiam soluta illo voluptates quam cumque quidem? Sapiente ipsum ipsa odio tempora explicabo, praesentium autem vitae animi voluptas nemo tenetur nobis dignissimos et inventore suscipit repudiandae adipisci quis consequatur facere aperiam. Voluptates ut vel inventore provident voluptatum perspiciatis animi laborum, pariatur dolore natus facere earum, temporibus adipisci cum quas reprehenderit. Fugit quos earum hic, laborum adipisci, similique culpa facilis cum atque totam ullam tempore iure repudiandae ipsum quas distinctio. Autem atque soluta distinctio nisi.
+            </p>
+        </div> <!-- /row -->
+    </div> <!-- /container -->
+
+
+    <pop-up-alert>
+
+        <div data-order="1" slot="header1" id="header1" class="singleMsg">
+            <h3 id="testHeader">Unable to process customer information</h3>
+            <p>Please be advised that due to computer systems issues, the Jeffersontown branch will not have extended hours Thursday, April 20. We look forward to serving you at all of our locations at regular business hours Friday; we appreciate your understanding.</p>
+        </div>
+
+        <div data-order="14" slot="header2" id="header2" class="singleMsg">
+            <h3 id="testHeader2">Holiday Early Closure</h3>
+            <p>All Jefferson County Clerk Offices will close at 12:00 noon Friday, April 7 in honor of Good Friday. We will resume normal business hours Monday, April 10. Have a Happy Easter!</p>
+        </div>
+
+        <!-- <div data-order="2" slot="header3" id="header3" class="singleMsg">
+            <h3 id="testHeader3">Tax Bill Update</h3>
+            <p>Information regarding delinquent tax bills affected by the Tax Delinquency Diversion Program is now available. <a href="https://jeffersoncountyclerk.org/delinquenttaxes/">Click here</a> to learn more about the release and renewal of this program.</p>
+        </div> -->
+
+        <!-- <div data-order="11" slot="header4" id="header4" class="singleMsg">
+            <h3 id="testHeader4">Scam Alert</h3>
+            <p>Be cautious of any ads, alerts, or “services” that offer to pay registration fees or claim to have discounts for car registration renewals. Customers are responsible for full payment of fees as assigned by the Commonwealth of Kentucky. The only way to renew your registration in Jefferson County is through one of our <a href="https://www.jeffersoncountyclerk.org/5-ways-to-renew/">5 Ways to Renew</a></p>
+        </div> -->
+
+        <div data-order="10" slot="header5" id="header5" class="singleMsg">
+            <h3 id="testHeader5">Kentucky Driver&apos;s Licenses</h3>
+            <p>To better serve our customers, please understand that the Jefferson County Clerk's Office does not issue driver's licenses. Please visit <a href="https://drive.ky.gov/Pages/default.aspx">drive.ky.gov</a> to renew or obtain a photo identification card. We look forward to meeting your vehicle registration needs.</p>
+        </div>
+        
+    </pop-up-alert>
+
+        <script src="assets/js/pop_up_alert.js"></script>
+</body>
+</html>
